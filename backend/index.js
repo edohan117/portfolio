@@ -6,7 +6,7 @@ const database = require('./database')
 
 app.use(bodyParser.json())
 
-// app.use(express.static('dist'))
+app.use(express.static('dist'))
 
 //메모장
 app.get('/api/memos', async (req, res) => {
